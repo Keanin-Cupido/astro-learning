@@ -1,9 +1,11 @@
 ---
+import Button from '../components/Button';
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 
 <MainLayout title="Home">
-    <p id="copyright" class="text-3xl bg-blue-500"></p>
+    <p id="copyright" class="text-3xl text-white font-bold bg-blue-500 p-8"></p>
+    <Button client:load />
 </MainLayout>
 
 <script>
